@@ -22,15 +22,17 @@ console.log(sentence);
 */
 // Escape Sequence Characters in String
 let fruit1 = 'Bana\'na';
-console.log(fruit1);
+// console.log(fruit1);
 
 let fruit2 = "Bana\"na";
-console.log(fruit2);
+// console.log(fruit2);
 
 /*
+
 /n -> new line
 /t -> tab space 
 /r -> carriage return 
+
 */
 
 // console.log("My name is \n Rakesh.")
