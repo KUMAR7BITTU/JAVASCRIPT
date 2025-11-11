@@ -42,7 +42,7 @@ let fr1 = "Rohan"
 // }
 
 // for (let i in fr1){
-//     console.log(fr1[i])
+//     console.log(fri[i])
 // }
 
 fr1[0] = "T" // Strings are immutable .
