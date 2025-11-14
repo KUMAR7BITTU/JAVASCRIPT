@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myapp2</title>
+</head>
+<body>
+    <!-- <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+
+    <script>
+    </script> -->
+
+    <script src="script1.js">
+        console.log("I am trying to be smart.")// javascript will ignore this console.log()
+        // We can either give file name in src or write javascript code in script tag but we can't do both .
+    </script>
+    
+</body>
+</html>
+
+<!-- Benefit of seperate script files using src attribute of script tag :-
+
+1, Browser caching .
+2, Separation of concern .
+
+Browser caching :- for suppose we have created three script.js file for different - different actions or tasks, we have not done any changes on it so when we will load that browser , then all these script.js will be already stored in cache and will be loaded from there . Browser will not download it and load it again .
+
+Separation of concern :- We can create different script.js file for different-different action , so that different individuals can perform there task separately . -->
