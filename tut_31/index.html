@@ -1,0 +1,37 @@
+<!-- Walking the DOM -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myapp9</title>
+</head>
+
+<script>
+ console.log(document.body)
+</script>
+<!-- Note :- document.body can sometimes be null if the javascript is written before the body tag . -->
+
+<body>
+    Hello World <span>This is span</div> 
+    <!-- Here div will automatically corrected by the browser and it will be changed to span . -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- DOM tree refers to the HTML page where all the nodes are objects. 
+ 
+There can be 3 main types of nodes in the DOM tree :-
+
+1, text nodes
+2, element nodes
+3, comment nodes
+
+In an HTML page, <html> is at the root and <head> & <body> are it's children, etc .
+
+A text node is always a leaf of the tree .
+
+Auto Correction :- If an errorneous HTML is encountered by the browser, it tends to correct it . For example , if we put something after the body, it is automatically moved inside the body . Another example is <table> tag which must contain <tbody> .
+
+-->
