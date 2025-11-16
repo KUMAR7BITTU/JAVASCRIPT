@@ -1,0 +1,103 @@
+<!-- Parent and Sibling of an element . -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myapp11</title>
+</head>
+<body><div class="first">first line</div><div class="second">second line</div>
+    <!-- 
+    <h1>Nice to meet you !</h1>
+    <div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio corporis veritatis dolore asperiores repellat obcaecati aut aliquam impedit placeat, consectetur, pariatur officia.</p><a href="www.google.com"></a>
+        </div>
+        <div>
+            <h3>This is very good .</h3>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+Notes on DOM collections :-
+
+1, They are read only .
+2, They are live .
+ element.childNodes variable(reference) will automatically update if childNodes of element is changed .
+3, They are iterable using for of loop .-->
+
+<!--
+
+n Chrome DevTools, $0, $1, $2, $3, and $4 are special variables that store the most recently inspected DOM elements.
+
+Here’s how they work:
+
+How $0, $1, … $4 Work
+
+When you inspect an element in DevTools (using the Elements panel):
+
+$0 = the currently selected element
+
+$1 = the previously selected element
+
+$2 = the one before that
+
+… up to $4
+
+So:
+
+✔ When you inspect an element:
+
+It becomes $0
+
+The old $0 becomes $1
+
+The old $1 becomes $2
+
+and so on…
+
+Example
+
+Inspect <h1>
+→ now $0 === <h1>
+
+Inspect <p>
+→ now $0 === <p>
+→ $1 === <h1>
+
+Inspect <a>
+→ $0 === <a>
+→ $1 === <p>
+→ $2 === <h1>
+
+Relation between $0 and $1
+
+They are not physically related in the DOM — they just represent your history of inspected elements.
+
+$0 = most recent selection
+
+$1 = previous selection
+
+$2 = older selection
+
+It’s simply DevTools keeping track of what you selected earlier.
+-->
+
+
+<!-- 
+Siblings and the parent ;-
+
+Siblings are nodes that are children o the same parent .
+-->
+
+<!-- 
+1, For example :- <head> and <body> are siblings . Sibling have same parent . In this above example it's html .
+    
+2, <body> is said to be the "next" or "right" sibling of <head> . 
+    
+<head> is said to be the "previous" or "left" sibling of <body> .
+-->
