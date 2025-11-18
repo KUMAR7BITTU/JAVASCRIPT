@@ -1,0 +1,130 @@
+<!-- How to search DOM ? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Nature</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://media.istockphoto.com/id/866523338/photo/merced-river-in-yosemite-valley.jpg?s=2048x2048&w=is&k=20&c=jz_sNHH2x2vHQF0SCQJy_40pC0J5YJA9xRNZ6BRdpgM=" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/id/691418200/photo/mirror-lake-in-yosemite-national-park.jpg?s=2048x2048&w=is&k=20&c=_7aDYKE7bpWeA6l7U_50L2bHc-vGWmeFxT1ldOGnaPs=" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/id/1406805021/photo/yosemite-valley-at-yosemite-national-park.jpg?s=2048x2048&w=is&k=20&c=JRFXAtyOxR3nT7wGKqd-9ihhV2mtd5c7qKR2DUr_lFU=" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+<div class="container row" style="align-items:center; justify-content: center; margin : auto;">
+  <div class="card mx-2" style="width: 18rem;">
+    <img name="src" src="https://media.istockphoto.com/id/866523338/photo/merced-river-in-yosemite-valley.jpg?s=2048x2048&w=is&k=20&c=jz_sNHH2x2vHQF0SCQJy_40pC0J5YJA9xRNZ6BRdpgM=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="firstcardtitle" class="card-title">Card title1</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <a href="#" class="btn btn-primary this">Go somewhere</a>
+    </div>
+  </div>
+    <div class="card mx-2" style="width: 18rem;">
+    <img src="https://media.istockphoto.com/id/866523338/photo/merced-river-in-yosemite-valley.jpg?s=2048x2048&w=is&k=20&c=jz_sNHH2x2vHQF0SCQJy_40pC0J5YJA9xRNZ6BRdpgM=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="firstcardtitle" class="card-title">Card title2</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+    <div class="card mx-2" style="width: 18rem;">
+    <img src="https://media.istockphoto.com/id/866523338/photo/merced-river-in-yosemite-valley.jpg?s=2048x2048&w=is&k=20&c=jz_sNHH2x2vHQF0SCQJy_40pC0J5YJA9xRNZ6BRdpgM=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="firstcardtitle" class="card-title">Card title3</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+Searching the DOM :- 
+
+DOM navigation properties are helpful when the elements are close to each other. If they are not close to each other , we have some more methods to search the DOM .
+
+1, document.getElementsById :- This method is used to get the element with the given "id" attribute .
+
+for example :- 
+let span = document.getElementById("span");
+span.style.color = "red";
+
+2, document.querySelectorAll :- Returns all elements inside an element matching the given css selector .
+
+3, document.querySelector :- Returns the first element for the given css selector . A efficient version of element.querySelectorAll(css)[0] .
+
+4, document.getElementsByTagName :- Returns elements with the given tag name .
+
+5, document.getElementsByClassName :- Returns elements that have the given css class .
+
+6, document.getElementsByName :- Searches elments by the name attributes .
+-->
